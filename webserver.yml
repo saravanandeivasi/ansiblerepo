@@ -6,7 +6,7 @@
     apt:
      name: "{{item}}" 
      state: present
-    when: ansible_os_family=="Debian" 
+    when: ansible_os_family=="redhat" 
     loop:
     - tree
     - apache2
