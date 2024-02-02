@@ -4,10 +4,10 @@
   tasks:
   - name: Create a webserver
     apt:
-     name: apache2
+     name: "{{webserver}}"
      state: present
 
   - name: Start the webserver
     service:
-     name: apache2
+     name: "{{webserver}}"
      state: started    
