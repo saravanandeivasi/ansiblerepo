@@ -4,10 +4,12 @@
   tasks:
   - name: Create a webserver
     apt:
-     name: "{{webserver}}"
+     name: "{{item}}" 
      state: present
-
-  - name: Start the webserver
-    service:
-     name: "{{webserver}}"
-     state: started    
+    loop:
+    - tree
+    - apache2
+    - wget
+    - python3
+    - gnome-chess
+    - thythmbox 
