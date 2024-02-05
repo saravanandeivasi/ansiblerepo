@@ -1,6 +1,6 @@
 ---
 - name: load the daemon and start the service
   systemd:
-   state: started
    daemon_reload: yes
    enabled: yes
+   state: started
