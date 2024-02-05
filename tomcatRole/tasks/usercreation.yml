@@ -1,0 +1,7 @@
+---
+- name: Create a Tomcat user on Ubuntu
+  user:
+   name: tomcat
+   shell: /bin/false
+   home: /opt/tomcat
+   state: present

@@ -1,0 +1,8 @@
+---
+- name: update Package
+  apt:
+   update_cache: yes
+- name: Install open JDK
+  apt:
+   name: install default-jre
+   state: present

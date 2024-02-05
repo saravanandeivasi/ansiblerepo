@@ -1,0 +1,6 @@
+---
+- name: Grant Tomcat and Owenrship
+  command: sudo chown -R tomcat:tomcat /opt/tomcat/
+
+- name: change the execute permissions
+  command: sudo chmod -R u+x /opt/tomcat/bin  
