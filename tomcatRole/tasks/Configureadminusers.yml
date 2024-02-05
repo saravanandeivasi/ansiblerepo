@@ -1,17 +1,17 @@
 ---
 - name: i want to copy tomcat users XML
   template:
-   src: /template/mytomeuser.j2
+   src: template/mytomeuser.j2
    dest: /opt/tomcat/conf/tomcat-users.xml
 
 - name: want to copy tomcat context
   template:
-   src: /template/conetxt.j2
+   src: template/conetxt.j2
    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: want to copy tomcat host file
   template:
-   src: /template/hostcontext.j2
+   src: template/hostcontext.j2
    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
 
 
