@@ -4,5 +4,5 @@
    update_cache: yes
 - name: Install open JDK
   apt:
-   name: install default-jre
+   name: default-jre
    state: present
